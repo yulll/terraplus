@@ -103,12 +103,6 @@
   .hero-meta strong{font-size:1.6rem;font-weight:700}
   .hero-meta span{font-size:.85rem;color:var(--muted)}
 
-  /* ---------- Marquee ---------- */
-  .marquee{background:var(--red);color:#fff;overflow:hidden;padding:18px 0;transform:rotate(-1.2deg);margin:-10px -2% 0;width:104%}
-  .marquee-track{display:flex;gap:3rem;width:max-content;animation:scroll 32s linear infinite}
-  .marquee span{font-weight:700;font-size:1.25rem;text-transform:uppercase;letter-spacing:.06em;display:flex;align-items:center;gap:3rem}
-  .marquee span::after{content:"+";font-weight:800;opacity:.6}
-  @keyframes scroll{to{transform:translateX(-50%)}}
 
   section{padding:120px 0}
 
@@ -199,7 +193,7 @@
   .reveal.in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){
     .reveal{opacity:1;transform:none}
-    .marquee-track,.hero-bg img{animation:none}
+    .hero-bg img{animation:none}
   }
 
   /* ---------- Responsive ---------- */
@@ -268,14 +262,6 @@
     </div>
   </div>
 </section>
-
-<!-- MARQUEE -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <span>Terrassement</span><span>Nivellement</span><span>Excavation</span><span>Création de jardins</span><span>Tonte & taille</span><span>Haies & arbustes</span><span>Entretien annuel</span><span>Déchets verts</span>
-    <span>Terrassement</span><span>Nivellement</span><span>Excavation</span><span>Création de jardins</span><span>Tonte & taille</span><span>Haies & arbustes</span><span>Entretien annuel</span><span>Déchets verts</span>
-  </div>
-</div>
 
 <!-- SERVICES -->
 <section id="services">
